@@ -1,0 +1,13 @@
+#!/bin/bash
+echo -e "Name\Roll No.\stage" > students.tsv
+echo -e " Sky\t1\t20 " >> students.tsv
+echo -e " Om\t2\t18 " >> students.tsv
+echo -e " Kush\t3\t19 " >> students.tsv
+echo -e " Suyash\t4\t20 " >> students.tsv
+echo -e " Sarvesh\t5\t20 " >> students.tsv
+echo -e " Avnish\t6\t21 " >> students.tsv
+echo -e " Shubhang\t7\t19 " >> students.tsv
+echo -e " Nikhil\t8\t20" >> students.tsv
+echo -e " James\t9\t20 " >> students.tsv
+echo -e " Rishit\t10\t20 " >> students.tsv
+cut -f1 students.tsv |  tail -n +2 | sort 
